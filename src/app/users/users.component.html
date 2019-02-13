@@ -1,0 +1,70 @@
+
+<!-- <table>
+        <caption>{{title}}</caption>
+        <tr>
+          <td></td>
+          <th scope="col">9</th>
+          <th scope="col">10</th>
+          <th scope="col">11</th>
+          <th scope="col">12</th>
+          <th scope="col">13</th>
+          <th scope="col">14</th>
+          <th scope="col">15</th>
+          <th scope="col">16</th>
+          <th scope="col">17</th>
+          <th scope="col">18</th>
+        </tr>
+        <tr>
+          <th scope="row">Settore 1</th>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >10</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >20</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >3</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >4</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >5</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >6</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >788</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >8</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >9</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >10</td>
+        </tr>
+        <tr>
+          <th scope="row">Settore2</th>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >10</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >20</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >3</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >4</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >5</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >6</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >788</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >8</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >9</td>
+          <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >10</td>
+        </tr>
+        <tr>
+                <th scope="row">Settore3</th>
+                <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >10</td>
+                <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >20</td>
+                <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >3</td>
+                <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >4</td>
+                <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >5</td>
+                <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >6</td>
+                <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >788</td>
+                <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >8</td>
+                <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >9</td>
+                <td [style.background-color]="user.age <= 10 ? 'green' : user.age <=20  ? 'yellow' : 'red'" >10</td>
+              </tr>
+
+      </table> -->
+
+<tr *ngFor="let user of users">
+    <td [style.background-color]="user.settore_1.9 <= 10 ? 'green' : user.settore_1.9 <=20  ? 'yellow' : 'red'" >{{user.name}}</td>
+    <td [style.background-color]="user.settore_1.9 <= 10 ? 'green' : user.settore_1.9 <=20  ? 'yellow' : 'red'">{{user.lastname}}</td>
+    <td [style.background-color]="user.settore_1.9 <= 10 ? 'green' : user.settore_1.9 <=20  ? 'yellow' : 'red'">{{user.fiscalcode}}</td>
+    <td [style.background-color]="user.settore_1.9 <= 10 ? 'green' : user.settore_1.9 <=20  ? 'yellow' : 'red'">{{user.phone}}</td>
+    <td [style.background-color]="user.settore_1.9 <= 10 ? 'green' : user.settore_1.9 <=20  ? 'yellow' : 'red'">{{user.email}}</td>
+    <td [style.background-color]="user.settore_1.9 <= 10 ? 'green' : user.settore_1.9 <=20  ? 'yellow' : 'red'">{{user.province}}</td>
+    <td [style.background-color]="user.settore_1.9 <= 10 ? 'green' : user.settore_1.9 <=20  ? 'yellow' : 'red'">{{user.age}}</td>
+</tr>
+
+
+
